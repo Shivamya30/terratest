@@ -10,7 +10,7 @@ import (
 func TestTerraformJENKINS_TASK(t *testing.T) {
 
 	Options := &terraform.Options{
-		TerraformDir: "../JENKINS_TASK",
+		TerraformDir: "../",
 	}
 	defer terraform.Destroy(t, Options)
 	init, err := terraform.InitE(t, Options)
